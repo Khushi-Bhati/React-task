@@ -58,7 +58,7 @@ const Registerform = () => {
           <div className="flex flex-col items-center mb-6">
             <img src={gemlaylogo} alt="logo" className="w-[150px] mb-2" />
             <h2 className="text-lg font-semibold text-gray-800">
-              <Link to="/login">LOGIN</Link> /{" "}
+              <Link to="/">LOGIN</Link> /{" "}
               <Link to="/register">SIGN UP</Link>
             </h2>
           </div>
@@ -110,7 +110,7 @@ const Registerform = () => {
           <p className="text-center text-sm text-gray-600 mt-4">
             Already have an account?{" "}
             <span className="text-green-700 font-semibold cursor-pointer">
-              <Link to="/login">Login</Link>
+              <Link to="/">Login</Link>
             </span>
           </p>
 
@@ -138,4 +138,5 @@ const Registerform = () => {
 };
 
 export default Registerform;
+
 
