@@ -31,8 +31,7 @@ const Loginform = () => {
       navigate("/main")
       dispatch(login(user))
 
-      // Redirect or store user info
-      // navigate("/dashboard"); or dispatch Redux action
+  
     } catch (error) {
       console.error("Error during Google login:", error);
     }
@@ -72,7 +71,7 @@ const Loginform = () => {
           <div className="flex flex-col items-center mb-6">
             <img src={gemlaylogo} alt="Gemlay Logo" className="w-[150px] mb-2" />
             <h2 className="text-lg font-semibold text-gray-800">
-              <Link to="/login">LOGIN</Link> / <Link to="/register">SIGN UP</Link>
+              <Link to="/">LOGIN</Link> / <Link to="/register">SIGN UP</Link>
             </h2>
           </div>
 
@@ -140,3 +139,4 @@ const Loginform = () => {
 };
 
 export default Loginform;
+
