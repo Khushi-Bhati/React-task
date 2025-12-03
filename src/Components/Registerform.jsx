@@ -38,7 +38,7 @@ const Registerform = () => {
 
     dispatch(addUser(input));
     setInput({ phoneNumber: "" });
-    navigate("/hero");
+    navigate("/main");
   };
 
   return (
@@ -138,3 +138,4 @@ const Registerform = () => {
 };
 
 export default Registerform;
+
