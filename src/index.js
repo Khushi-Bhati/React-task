@@ -23,7 +23,8 @@ import Protectedroute from './Components/Protectedroute';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<App />}>
+     <Route path='/' element={<App />}>
+       <Route index element={<Loginform />} />
       <Route path='/' element={<Protectedroute />}>
         <Route path='/main' element={<Hero />} />
 
@@ -33,7 +34,7 @@ const router = createBrowserRouter(
 
 
       <Route path='/register' element={<Registerform />} />
-      <Route path='/login' element={<Loginform />} />
+      
 
     </Route>
 
